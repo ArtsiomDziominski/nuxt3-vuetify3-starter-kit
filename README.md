@@ -9,6 +9,9 @@ A starter template for quickly building projects with Nuxt 3 and Vuetify 3. This
 * Login and registration form
 * Store
 * Middleware
+* Interface
+* Layout default
+* Pages
 
 # Setup
 
