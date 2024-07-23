@@ -4,7 +4,7 @@ import { COOKIES_TOKEN } from '~/const/const';
 import { getCookie } from '~/utils/cookie';
 
 export default defineNuxtRouteMiddleware((to, from) => {
-	if (import.meta.client) {
+	if (process.client) {
 		if (to.fullPath !== from.fullPath) return;
 		const storeUser = userStore();
 		const { isAuthenticated, userToken } = storeToRefs(storeUser);

@@ -19,7 +19,7 @@ const dark: ThemeDefinition = {
 };
 
 export default defineNuxtPlugin((nuxt) => {
-	const defaultTheme = import.meta.client ? localStorage.getItem('theme') || themeLight : themeLight;
+	const defaultTheme = process.client ? localStorage.getItem('theme') || themeLight : themeLight;
 	const vuetify = createVuetify({
 		ssr: true,
 		components,
